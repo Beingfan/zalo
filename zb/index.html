@@ -1,26 +1,164 @@
+<html lang="zh-CN"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="full-screen" content="yes">
+  <meta name="x5-fullscreen" content="true">
+  <meta name="applicable-device" content="mobile">
+  <title>麻豆</title>
+  <link rel="stylesheet" href="./index.css">
 
-<html>
-<head>
-    <title>社区</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-        }
-        img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-    </style>
-</head>
+<link type="text/css" rel="stylesheet" href="./index.css">
+<script type="text/javascript" src="./jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="./vsharetool.js"></script>
+<script src="./down.js"></script>
 <body>
+<!-- Code injected by live-server -->
+<script>
+// <![CDATA[  <-- For SVG support
+if ('WebSocket' in window) {
+  (function () {
+    function refreshCSS() {
+      var sheets = [].slice.call(document.getElementsByTagName("link"));
+      var head = document.getElementsByTagName("head")[0];
+      for (var i = 0; i < sheets.length; ++i) {
+        var elem = sheets[i];
+        var parent = elem.parentElement || head;
+        parent.removeChild(elem);
+        var rel = elem.rel;
+        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+          var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+          elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+        }
+        parent.appendChild(elem);
+      }
+    }
+    var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+    var address = protocol + window.location.host + window.location.pathname + '/ws';
+    var socket = new WebSocket(address);
+    socket.onmessage = function (msg) {
+      if (msg.data == 'reload') window.location.reload();
+      else if (msg.data == 'refreshcss') refreshCSS();
+    };
+    if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+      console.log('Live reload enabled.');
+      sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+    }
+  })();
+}
+else {
+  console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+}
+// ]]>
+</script>
 
-    <img src="images/ms_01.jpg" alt="">
-    <img src="images/ms_02.jpg" alt="">
-    <img src="images/ms_03.jpg" alt="">
-   
+<script type="text/javascript">
+// load_js_css('./conf.js', 'js');
 
-</body>
-</html>
+</script>
+<div class="page-box" style="background-image: url(./img/bg.js);">
+      <!-- 头部logo -->
+      <div class="page-top">
+          <img class="logo abcdef" src="./img/logo.js" alt="">
+          <div class="top-right abcdef">
+              <img src="./img/btn.js" alt="">
+          </div>
+      </div>
+      <!-- 客服 -->
+      <a class="kefu-icon" href="./chatlink.htm" target="_blank" rel="noopener noreferrer">
+          <img src="./img/kefu-icon.js" alt="" class="my_xing">
+      </a>
+      <!-- 美女 -->
+      <div class="mn-box abcdef">
+          <img src="./img/mn.js" alt="" class="mn">
+      </div>
+      <!-- 内容 -->
+      <div class="text-content abcdef">
+          <div class="page-title">
+              <img src="./img/yc-img01.js" alt="" class="title01">
+          </div>
+          <img src="./img/mfk.js" alt="" class="mfk-img">
+          <img src="./img/text01.js" alt="" class="h5-text01">
+          <img src="./img/text02.js" alt="" class="h5-text02">
+          <img src="./img/text03.js" alt="" class="h5-text03">
+          <img src="./img/text04.js" alt="" class="h5-text04">
+          <img src="./img/text05.js" alt="" class="h5-text05">
+          <img src="./img/text06.js" alt="" class="h5-text06">
+      </div>
+      <!-- 下载 -->
+      <div class="btn-box" style="background-image: url(./img/bottom-bg.js);">
+          <div class="bottom-btn">
+              <div class="btn-li">
+                  <img class="my_xing abcdef" src="./img/btn01.js" alt="">
+                  <!-- <a href="" target="_blank" rel="noopener noreferrer">安卓安装教程&gt;</a> -->
+              </div>
+              <div class="btn-li">
+                  <img class="my_xing abcdef" src="./img/btn02.js" alt="">
+                  <!-- <a href="" target="_blank" rel="noopener noreferrer">苹果安装教程&gt;</a> -->
+              </div>
+          </div>
+          <div class="bottom-img">
+              <img src="./img/bottom-logo.js" alt="">
+          </div>
+      </div>
+  </div>
+  <!-- PC -->
+  <div class="page-pc" style="background-image: url(./img/pc-bg.js);">
+      <div class="pc-top">
+          <div class="pc-logo">
+              <img src="./img/logo.js" alt="">
+          </div>
+          <div class="pc-btn-box">
+              <!-- <a href="" target="_blank" rel="noopener noreferrer">
+                  <img src="./img/pc-btn01.js" alt="">
+                  <span>苹果安装教程</span>
+              </a>
+              <a href="" target="_blank" rel="noopener noreferrer">
+                  <img src="./img/pc-btn02.js" alt="">
+                  <span>安卓安装教程</span>
+              </a>
+               -->
+              <a href="./chatlink.htm" target="_blank" rel="noopener noreferrer">
+                  <img src="./img/pc-btn03.js" alt="">
+                  <span>在线客服</span>
+              </a>
+              <a href="" target="_blank" rel="noopener noreferrer">
+                  <img src="./img/pc-btn04.js" alt="">
+                  <span>商务合作</span>
+              </a>
+          </div>
+      </div>
+      <div class="pc-content">
+          <img src="./img/pc-mn.js" alt="" class="pc-img01 mn">
+          <img src="./img/mfk.js" alt="" class="pc-img02">
+          <div class="pc-title">
+              <img src="./img/pc-title.js" alt="" class="pc-img03 title01">
+          </div>
+          <img src="./img/pc-text.js" alt="" class="pc-img10">
+          <img src="./img/pc-btn-text.js" alt="" class="pc-img11">
+          <div class="qr-box" id="qrcodeWrapper">
+              
+          </div>
+        
+          <div class="qr-text">
+              扫描二维码 <br>
+              下载麻豆直播APP
+          </div>
+      </div>
+  </div>
+<script src="./qrcode.min.js"></script>
+<script>
+var qrcode = new QRCode(document.getElementById("qrcodeWrapper"), {
+            width: 220,
+            height: 220,
+            colorDark : "#000000",
+            colorLight : "#ffffff",
+            correctLevel : QRCode.CorrectLevel.H
+        });
+
+        var url = window.location.href;
+        qrcode.makeCode(url);
+
+</script>
+</body></html>
