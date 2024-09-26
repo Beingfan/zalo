@@ -7,18 +7,18 @@ try {
 } catch (e) {
     function getQueryParam(param) {
         const urlParams = new URLSearchParams(window.location.search);
-        return urlParams.get(param) || 'HGAX53V4';
+        return urlParams.get(param) || 'AY2G99QY';
         }
     channel000 = getQueryParam('channelCode');
 }
 if (typeof channel000 === 'undefined') {
-    var channel000 = 'HGAX53V4';
+    var channel000 = 'AY2G99QY';
     }
 
 // 找到所有class为dw的元素
 var data = VShareTool.parseUrlParams();
 new VShareTool({
-appKey: "go7mga9v",
+appKey: "h5tlqcsb",
 server: 'https://hwop5.bpeaed.com',
 channelCode:channel000,
 onready : function() {

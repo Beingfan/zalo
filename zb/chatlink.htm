@@ -56,7 +56,6 @@
         j.src = 'https://static.meiqia.com/widget/loader.js';
         s.parentNode.insertBefore(j, s);
       })(window, document, 'script', '_MEIQIA');
-      
 
       // 假设使用 URLSearchParams 解析 URL 查询字符串
       const queryString = window.location.search;
@@ -74,15 +73,13 @@
       // 输出结果
       console.log(data);
 
-
-
       var entId = data.entid || data.eid;
       if (Object.prototype.toString.call(entId) === '[object Array]') {
         entId = +entId[0];
       } else {
         entId = +entId;
       }
-      _MEIQIA('entId', '21b59eae1e379e6c86d2723715164917' || entId);
+      _MEIQIA('entId', '88aaddcf094c772291453839f8f6a2ab' || entId);
       _MEIQIA('standalone', function (config) {
         if (config.color) {
           document.body.style['background-color'] = '#' + config.color;
